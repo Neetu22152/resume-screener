@@ -2,10 +2,14 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.responses import HTMLResponse
 import spacy
 from google import genai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = FastAPI()
 nlp = spacy.load("en_core_web_sm")
-client = genai.Client(api_key="AQ.Ab8RN6JtF6VMJV5Tnzfj4ZNigdBcyppOY9R0nt6pGEJjTwkL7g")
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def extract_keywords(text):
     doc = nlp(text.lower())
