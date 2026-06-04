@@ -112,4 +112,5 @@ async def analyze(job_description: str = Form(...), resume: UploadFile = File(..
         <a href="/" style="display:inline-block; margin-top:24px; color:#333;">Try another</a>
       </body>
     </html>
-    """
+    """ ""
+    
