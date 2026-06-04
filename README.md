@@ -1,3 +1,4 @@
+
 # Resume Screener
 
 A web app that compares a resume against a job description and scores how well they match.
@@ -17,3 +18,6 @@ A web app that compares a resume against a job description and scores how well t
 pip install fastapi uvicorn python-multipart spacy
 python -m spacy download en_core_web_sm
 uvicorn main:app --reload
+## Screenshots
+
+<img width="605" height="617" alt="image" src="https://github.com/user-attachments/assets/90a9a783-61fa-4428-bced-f1de1cdafb3b" />
